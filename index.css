@@ -1,0 +1,330 @@
+/*https://startbootstrap.com/previews/grayscale*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 10px;
+  /* background-color: aqua;*/
+}
+.logo {
+  font-size: 30px;
+  text-align: center;
+}
+.nav-links {
+  margin-left: 30%;
+  display: flex;
+  align-items: center;
+}
+.nav-links li {
+  font-size: 20px;
+  margin: 0 35px;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+.menu-line {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 3px;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./srk/bla1.jpg);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.header-content {
+  margin-bottom: 250px;
+  color: whitesmoke;
+  text-align: center;
+}
+.header-content h1 {
+  font-size: 10vmin;
+  margin-right: 5px;
+  padding: 0px 15px;
+}
+.header-content p {
+  width: 50%;
+  height: 80px;
+  /* background-color: red;*/
+  font-size: 1.6em;
+  margin-top: 10px;
+  margin-left: 8em;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.header-content a {
+  background-color: rgb(77, 142, 153);
+  font-size: 1em;
+  text-align: center;
+  border-radius: 6px;
+  align-items: center;
+
+  padding: 20px 30px;
+}
+/* Built */
+.built {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./srk/bla3.jpeg);
+  background-size: cover;
+  background-position: bottom;
+  color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.built-content {
+  color: whitesmoke;
+  margin-left: 40px;
+}
+.built-content h1 {
+  font-size: 35px;
+  text-align: center;
+}
+.built-content p {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 15em;
+}
+/* img3  Shoreline */
+.shoreline {
+  width: 75%;
+  height: 70vh;
+  margin: 90px auto;
+  display: flex;
+}
+.shoreline img {
+  background-position: center;
+  width: 65%;
+  margin: 0px 50px 0 0;
+}
+.shoreline-content {
+  width: 35%;
+  margin: auto;
+}
+.shoreline-content h3 {
+  color: rgb(51, 49, 49);
+  text-align: center;
+  margin: 0px;
+}
+
+.shoreline-content p {
+  margin: auto;
+
+  color: rgb(132, 135, 138);
+  text-align: center;
+}
+/*misty mountain */
+.mm {
+  width: 75%;
+  height: 40em;
+  margin: auto;
+
+  background-color: aqua;
+}
+.misty {
+  margin-top: 50px;
+  height: 20em;
+  display: flex;
+}
+.misty img {
+  width: 50%;
+}
+.misty-content {
+  background-color: black;
+  color: whitesmoke;
+  width: 50%;
+}
+.mis {
+  margin: 50px 25px;
+  padding: 40px 70px;
+}
+.misty-content h1 {
+  color: whitesmoke;
+  text-align: center;
+}
+.misty-content p {
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(177, 175, 175);
+}
+/*mountains*/
+.mount {
+  height: 20em;
+  display: flex;
+}
+.mount img {
+  width: 50%;
+}
+.mount-content {
+  background-color: black;
+  width: 50%;
+}
+.mou {
+  margin: 50px 25px;
+  padding: 40px 70px;
+}
+.mount-content h1 {
+  color: whitesmoke;
+  text-align: center;
+}
+.mount-content p {
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(177, 175, 175);
+}
+
+/*media query*/
+@media Screen and (max-width: 921px) {
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+  }
+  .nav-links {
+    /* display: none;*/
+
+    flex-direction: column;
+    margin: auto;
+    margin-top: -900px;
+    background-color: blanchedalmond;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu {
+    margin-top: opx;
+  }
+  .nav-links li {
+    margin: 10px;
+    background-color: yellow;
+  }
+
+  .menu {
+    display: block;
+  }
+  .menu-line {
+    position: absolute;
+    right: 30px;
+    top: 3px;
+    background-color: rgb(198, 208, 216);
+  }
+
+  header {
+    margin-top: 100px;
+  }
+  .header-content p {
+    width: 80%;
+    height: 60px;
+    margin-top: 15px;
+    margin-left: 3em;
+    padding: 0px;
+  }
+  .built-content h1 {
+  }
+  .built-content p {
+    width: 60%;
+    height: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5em;
+  }
+  .shoreline {
+    flex-direction: column;
+  }
+  .shoreline img {
+    width: 100%;
+  }
+  .shoreline-content {
+    width: 80%;
+    margin: 30px;
+  }
+  .shoreline-content p {
+    margin: 5px;
+    text-align: justify;
+  }
+  .mm {
+    height: 220vh;
+    margin-top: 50px;
+    padding-top: 10px;
+  }
+  .misty {
+    flex-direction: column;
+  }
+  .misty img {
+    width: auto;
+  }
+  .misty-content {
+    width: auto;
+  }
+  .mount {
+    margin-top: 40em;
+    flex-direction: column-reverse;
+  }
+  .mount img {
+    width: auto;
+  }
+  .mount-content {
+    width: auto;
+  }
+
+  /*
+  .mount img {
+    width: auto;
+    margin-top: 50px;
+    height: 50vh;
+    position: absolute;
+  }
+  .mount-content {
+    width: auto;
+    height: 100%;
+    padding-top: 50%;
+    position: absolute;
+  }
+  .mou {
+    margin: 20%;
+    text-align: end;
+    background-color: aqua;
+  }*/
+}
+/* media*/
+@media screen and (max-width: 621px) {
+  .mount {
+    margin-top: 35em;
+    flex-direction: column-reverse;
+  }
+  .mount img {
+    width: auto;
+  }
+  .mount-content {
+    width: auto;
+    background-color: blue;
+  }
+}

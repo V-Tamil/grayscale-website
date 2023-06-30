@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  align-items: justify;
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  list-style-type: none;
+}
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 3vh;
+  color: rgb(185, 182, 182);
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 40px;
+}
+
+.nav ul li {
+  display: inline-block;
+
+  margin: 0px 60px;
+  padding: 1px;
+  line-height: 30px;
+}
+.nav ul li:hover {
+  /* text-decoration:underline; 
+     margin-top: 10px;*/
+  border-bottom: 4px solid rgb(0, 238, 255);
+}
+span {
+  font-size: 1.5rem;
+  padding-left: 30px;
+  line-height: 50px;
+  color: rgb(243, 208, 10);
+}
+.div1 {
+  height: 100vh;
+  width: 100vw;
+  color: whitesmoke;
+  background-image: url(./srk/bla1.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: bottom;
+}
+
+.gray {
+  color: rgb(185, 182, 182);
+  text-align: center;
+  margin-bottom: 40%;
+  font-size: 6vh;
+}
+.para {
+  margin-bottom: 20%;
+  margin-left: 25%;
+  color: rgb(231, 205, 205);
+  font-size: 20px;
+}
+.get {
+  background-color: rgb(80, 170, 170);
+  color: whitesmoke;
+  position: absolute;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 30%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.bootstrap {
+  height: 30em;
+  width: 100vw;
+  color: whitesmoke;
+  background-image: url(./srk/bla3.jpeg);
+  background-size: cover;
+}
+.built {
+  display: flex;
+  justify-content: center;
+  padding-top: 30%;
+}
+.para1 {
+  margin: 40px 20px 0px 45px;
+}
+.Shoreline {
+  position: top;
+}
+img {
+  width: 70%;
+  margin-top: 30%;
+  margin-left: 50px;
+}
+.head {
+  margin: 30px 150px 0px;
+}
+.para2 {
+  color: rgb(235, 155, 155);
+  margin: 5px 80px 0px;
+}
+.misty {
+  width: 100vh;
+  height: 80vh;
+  margin: 50px 40px 0px;
+  background-image: url(./srk/blc.jpg);
+  position: top;
+}
+.head1 {
+  padding: 60% 0% 5% 30%;
+  color: wheat;
+}
+.mount {
+  width: 100vh;
+  height: 80vh;
+  margin: 50px 40px 0px;
+  background-image: url(./srk/black1.jpg);
+  background-size: cover;
+}
+.sub {
+  height: 270vh;
+  width: 100%;
+  color: whitesmoke;
+  background-image: url(./srk/bla1.jpg);
+  background-size: cover;
+  margin: 25% 0px;
+  position: bottom;
+}
+.updates {
+  height: 50%;
+  /* align-items: center;*/
+}
+.cribe {
+  color: rgb(119, 114, 114);
+  position: absolute;
+  display: flex;
+  align-items: end;
+  height: 35%;
+  width: 80%;
+  font-size: 2em;
+  margin: 25% 15% 0% 10%;
+  padding: 30px;
+}
+.enter {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0% 15% 10% 15%;
+}
+.add {
+  background-color: rgb(238, 245, 238);
+  color: rgb(140, 139, 141);
+  margin: 0px 10px 0px 10px;
+  padding: 40px;
+}
+.me {
+  padding: 38px;
+  margin: 0px 10px 10px 10px;
+  background-color: aliceblue;
+}
+.Market {
+  width: 55%;
+  height: 40%;
+  margin: auto;
+  padding: 10% 1%;
+}
+.address {
+  background-color: rgb(4, 91, 94);
+  margin: 60px 15px;
+  padding: 40px 10px;
+}
+.email {
+  background-color: rgb(4, 91, 94);
+  margin: 60px 15px;
+  padding: 50px 25px;
+}
+.phone {
+  background-color: rgb(4, 91, 94);
+  margin: 60px 15px;
+  padding: 50px 25px;
+}
+.copy {
+  margin: 15% 25%;
+}
+@media Screen and (max-width: 901px) {
+  .nav ul li {
+    display: none;
+  }
+}
