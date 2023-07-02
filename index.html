@@ -19,9 +19,10 @@
         <li><a>Contact</a></li>
       </ul>
       <div class="menu">
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
+        <p>
+          Menu
+          <i class="fa-solid fa-bars"></i>
+        </p>
       </div>
     </nav>
     <header>
@@ -84,7 +85,7 @@
       </div>
     </section>
     <section class="last">
-      <div class="">
+      <div class="sub">
         <h1>Subscribe to receive updates!</h1>
         <a>ENTER EMAIL ADDRESS...</a>
         <a> NOTIFY ME! </a>
@@ -115,16 +116,13 @@
     <script>
       const menu = document.querySelector(".menu");
       const navlinks = document.querySelector(".nav-links");
+
       menu.addEventListener("click", () => {
-        navlinks.classList.toggle(".mobile-menu");
+        navlinks.classList.toggle("mobile-menu");
       });
     </script>
 
-    <!--
-     // <i class="fa-brands fa-facebook-f"></i>//
-      
-      
-      //menuBtn.addEventListener("click", () => {
-  navlink.classList.toggle("mobile-menu"); });-->
+    <!--// <i class="fa-brands fa-facebook-f"></i>//-->
   </body>
 </html>
+1

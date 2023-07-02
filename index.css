@@ -22,7 +22,6 @@ ul {
   /* background-color: aqua;*/
 }
 .logo {
-  font-size: 30px;
   text-align: center;
 }
 .nav-links {
@@ -36,13 +35,16 @@ ul {
 }
 
 .menu {
-  cursor: pointer;
   display: none;
-}
-.menu-line {
-  width: 25px;
-  height: 25px;
+  width: 80px;
+  height: 45px;
+  padding: 13px 10px;
   margin-bottom: 3px;
+  cursor: pointer;
+}
+.menu p {
+  color: rgb(85, 150, 150);
+  font-size: 13px;
 }
 header {
   width: 100vw;
@@ -51,71 +53,82 @@ header {
   background-position: bottom;
   background-size: cover;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
 }
 .header-content {
-  margin-bottom: 250px;
+  width: 550px;
+  height: 40px;
+  /* margin-bottom: 250px; */
   color: whitesmoke;
   text-align: center;
 }
 .header-content h1 {
   font-size: 10vmin;
-  margin-right: 5px;
-  padding: 0px 15px;
+  /* margin-right: 5px;
+  padding: 0px 15px; */
 }
 .header-content p {
-  width: 50%;
-  height: 80px;
-  /* background-color: red;*/
   font-size: 1.6em;
-  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  /* width: 50%;
+  height: 80px; */
+  /* background-color: red;*/
+  /* margin-top: 10px;
   margin-left: 8em;
   margin-bottom: 50px;
-  text-align: center;
+  text-align: center; */
 }
 .header-content a {
   background-color: rgb(77, 142, 153);
   font-size: 1em;
-  text-align: center;
+  /* text-align: center; */
   border-radius: 6px;
-  align-items: center;
-
-  padding: 20px 30px;
+  padding: 20px 36px;
 }
 /* Built */
 .built {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url(./srk/bla3.jpeg);
   background-size: cover;
   background-position: bottom;
-  color: yellow;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 .built-content {
+  width: 500px;
+  height: 40px;
+  text-align: center;
+  /* padding-top: 260px;
+  padding-left: 150px;
+  text-align: center;
+ margin-left: 40px;
+  display: flex;
+  justify-content: center;*/
+
   color: whitesmoke;
-  margin-left: 40px;
 }
 .built-content h1 {
   font-size: 35px;
-  text-align: center;
 }
 .built-content p {
-  width: 50%;
-  height: 50%;
-  text-align: center;
-  margin-top: 20px;
-  margin-left: 15em;
+  margin: 15px;
+  /* width: 60%;
+  height: 20px;
+  margin: 20px 100px;
+  text-align: center;*/
 }
 /* img3  Shoreline */
 .shoreline {
   width: 75%;
-  height: 70vh;
+  height: 80vh;
   margin: 90px auto;
   display: flex;
+  /* align-items: center;
+  justify-content: center; */
 }
 .shoreline img {
   background-position: center;
@@ -123,70 +136,72 @@ header {
   margin: 0px 50px 0 0;
 }
 .shoreline-content {
-  width: 35%;
+  width: 300px;
   margin: auto;
+  text-align: center;
 }
 .shoreline-content h3 {
   color: rgb(51, 49, 49);
-  text-align: center;
-  margin: 0px;
 }
 
 .shoreline-content p {
-  margin: auto;
-
   color: rgb(132, 135, 138);
-  text-align: center;
 }
 /*misty mountain */
 .mm {
-  width: 75%;
-  height: 40em;
+  width: 80%;
+  /* height: 80px; */
   margin: auto;
-
   background-color: aqua;
 }
 .misty {
   margin-top: 50px;
-  height: 20em;
+  height: 360px;
   display: flex;
 }
 .misty img {
   width: 50%;
 }
 .misty-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   color: whitesmoke;
-  width: 50%;
 }
 .mis {
-  margin: 50px 25px;
-  padding: 40px 70px;
+  text-align: center;
+}
+.mis {
+  height: 150px;
+  padding: 10px 95px;
 }
 .misty-content h1 {
   color: whitesmoke;
-  text-align: center;
 }
 .misty-content p {
   margin-top: 10px;
-  text-align: center;
   color: rgb(177, 175, 175);
 }
 /*mountains*/
 .mount {
-  height: 20em;
+  height: 360px;
   display: flex;
 }
 .mount img {
   width: 50%;
 }
 .mount-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: black;
   width: 50%;
 }
 .mou {
-  margin: 50px 25px;
-  padding: 40px 70px;
+  /* margin: 50px 25px; */
+
+  padding: 0px 95px;
 }
 .mount-content h1 {
   color: whitesmoke;
@@ -197,6 +212,10 @@ header {
   text-align: center;
   color: rgb(177, 175, 175);
 }
+.last {
+  background-color: aqua;
+  background-image: url(./srk/black.jpg);
+}
 
 /*media query*/
 @media Screen and (max-width: 921px) {
@@ -204,76 +223,67 @@ header {
     padding: 0;
   }
   .logo {
-    .logo {
-      position: absolute;
-      top: 30px;
-      left: 30px;
-    }
+    position: absolute;
+    top: 30px;
+    left: 30px;
   }
   .nav-links {
-    /* display: none;*/
+    /*display: none;*/
 
     flex-direction: column;
-    margin: auto;
-    margin-top: -900px;
-    background-color: blanchedalmond;
-    transition: all 0.5s ease;
+
+    /* margin-top: -900px;*/
+    background-color: rgb(136, 90, 22);
   }
-  .mobile-menu {
-    margin-top: opx;
-  }
+
   .nav-links li {
-    margin: 10px;
+    /*margin: 10px;*/
     background-color: yellow;
   }
 
   .menu {
     display: block;
-  }
-  .menu-line {
     position: absolute;
+    align-items: center;
     right: 30px;
     top: 3px;
-    background-color: rgb(198, 208, 216);
+    border: 1px solid rgb(85, 150, 150);
+    border-radius: 8px;
+  }
+  .mobile-menu {
+    margin-top: opx;
   }
 
-  header {
-    margin-top: 100px;
+  /* header {
+     margin-top: 100px; 
   }
   .header-content p {
     width: 80%;
     height: 60px;
     margin-top: 15px;
     margin-left: 3em;
-    padding: 0px;
-  }
-  .built-content h1 {
-  }
-  .built-content p {
-    width: 60%;
-    height: 20px;
-    text-align: center;
-    margin-top: 20px;
-    margin-left: 5em;
-  }
+    padding: 0px; 
+  } */
+
   .shoreline {
+    /* margin:90px  auto;  */
     flex-direction: column;
   }
   .shoreline img {
-    width: 100%;
+    width: 530px;
+    height: 70%;
   }
   .shoreline-content {
+    text-align: center;
     width: 80%;
-    margin: 30px;
+    height: 20px;
+    margin: 40px;
   }
   .shoreline-content p {
-    margin: 5px;
-    text-align: justify;
+    margin: 10px 0px 0px;
   }
   .mm {
-    height: 220vh;
     margin-top: 50px;
-    padding-top: 10px;
   }
   .misty {
     flex-direction: column;
@@ -285,10 +295,12 @@ header {
     width: auto;
   }
   .mount {
-    margin-top: 40em;
+    margin-top: 70%;
+    /* align-items: center; */
     flex-direction: column-reverse;
   }
   .mount img {
+    margin: 0px 0px;
     width: auto;
   }
   .mount-content {
@@ -313,18 +325,4 @@ header {
     text-align: end;
     background-color: aqua;
   }*/
-}
-/* media*/
-@media screen and (max-width: 621px) {
-  .mount {
-    margin-top: 35em;
-    flex-direction: column-reverse;
-  }
-  .mount img {
-    width: auto;
-  }
-  .mount-content {
-    width: auto;
-    background-color: blue;
-  }
 }
