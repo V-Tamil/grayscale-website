@@ -30,8 +30,12 @@ ul {
   align-items: center;
 }
 .nav-links li {
+  cursor: pointer;
   font-size: 20px;
   margin: 0 35px;
+}
+.nav-links li a {
+  color: black;
 }
 
 .menu {
@@ -47,9 +51,9 @@ ul {
   font-size: 13px;
 }
 header {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background-image: url(./srk/bla1.jpg);
+  background-image: url(./img/blc.jpg);
   background-position: bottom;
   background-size: cover;
   display: flex;
@@ -59,42 +63,31 @@ header {
 .header-content {
   width: 550px;
   height: 40px;
-  /* margin-bottom: 250px; */
   color: whitesmoke;
   text-align: center;
 }
 .header-content h1 {
   font-size: 10vmin;
-  /* margin-right: 5px;
-  padding: 0px 15px; */
 }
 .header-content p {
   font-size: 1.6em;
   padding-top: 10px;
   padding-bottom: 50px;
-  /* width: 50%;
-  height: 80px; */
-  /* background-color: red;*/
-  /* margin-top: 10px;
-  margin-left: 8em;
-  margin-bottom: 50px;
-  text-align: center; */
 }
 .header-content a {
   background-color: rgb(77, 142, 153);
   font-size: 1em;
-  /* text-align: center; */
   border-radius: 6px;
   padding: 20px 36px;
 }
 /* Built */
 .built {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./srk/bla3.jpeg);
+  background-image: url(./img/bla4.webp);
   background-size: cover;
   background-position: bottom;
 }
@@ -102,12 +95,6 @@ header {
   width: 500px;
   height: 40px;
   text-align: center;
-  /* padding-top: 260px;
-  padding-left: 150px;
-  text-align: center;
- margin-left: 40px;
-  display: flex;
-  justify-content: center;*/
 
   color: whitesmoke;
 }
@@ -116,10 +103,6 @@ header {
 }
 .built-content p {
   margin: 15px;
-  /* width: 60%;
-  height: 20px;
-  margin: 20px 100px;
-  text-align: center;*/
 }
 /* img3  Shoreline */
 .shoreline {
@@ -127,8 +110,6 @@ header {
   height: 80vh;
   margin: 90px auto;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
 }
 .shoreline img {
   background-position: center;
@@ -150,9 +131,7 @@ header {
 /*misty mountain */
 .mm {
   width: 80%;
-  /* height: 80px; */
   margin: auto;
-  background-color: aqua;
 }
 .misty {
   margin-top: 50px;
@@ -213,33 +192,50 @@ header {
   color: rgb(177, 175, 175);
 }
 .last {
-  background-color: aqua;
-  background-image: url(./srk/black.jpg);
+  margin-top: 10px;
+  padding: 15px;
+  padding-bottom: 20px;
+  background-color: rgb(43, 42, 42);
+
+  color: white;
+  text-align: center;
+}
+.footer_content div span a {
+  color: blue;
+}
+.menu {
+  cursor: pointer;
+  display: none;
 }
 
 /*media query*/
-@media Screen and (max-width: 921px) {
-  .navbar {
-    padding: 0;
+@media Screen and (max-width: 650px) {
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
   }
-  .logo {
+  .nav-links li {
+    padding: 10px 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /* .logo {
     position: absolute;
     top: 30px;
     left: 30px;
   }
   .nav-links {
-    /*display: none;*/
-
     flex-direction: column;
-
-    /* margin-top: -900px;*/
     background-color: rgb(136, 90, 22);
   }
 
   .nav-links li {
-    /*margin: 10px;*/
     background-color: yellow;
-  }
+  } */
 
   .menu {
     display: block;
@@ -254,23 +250,11 @@ header {
     margin-top: opx;
   }
 
-  /* header {
-     margin-top: 100px; 
-  }
-  .header-content p {
-    width: 80%;
-    height: 60px;
-    margin-top: 15px;
-    margin-left: 3em;
-    padding: 0px; 
-  } */
-
   .shoreline {
-    /* margin:90px  auto;  */
     flex-direction: column;
   }
   .shoreline img {
-    width: 530px;
+    width: 380px;
     height: 70%;
   }
   .shoreline-content {
@@ -283,7 +267,7 @@ header {
     margin: 10px 0px 0px;
   }
   .mm {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .misty {
     flex-direction: column;
@@ -295,8 +279,7 @@ header {
     width: auto;
   }
   .mount {
-    margin-top: 70%;
-    /* align-items: center; */
+    margin-top: 80px;
     flex-direction: column-reverse;
   }
   .mount img {
@@ -306,23 +289,4 @@ header {
   .mount-content {
     width: auto;
   }
-
-  /*
-  .mount img {
-    width: auto;
-    margin-top: 50px;
-    height: 50vh;
-    position: absolute;
-  }
-  .mount-content {
-    width: auto;
-    height: 100%;
-    padding-top: 50%;
-    position: absolute;
-  }
-  .mou {
-    margin: 20%;
-    text-align: end;
-    background-color: aqua;
-  }*/
 }

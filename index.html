@@ -3,30 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>G R A Y S C A L E clone</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./assets/index.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <div class="navbar">
       <h1 class="logo">Start Bootstrap</h1>
       <ul class="nav-links">
-        <li><a>About</a></li>
-        <li><a>projects</a></li>
-        <li><a>Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="menu">
-        <p>
+      <div class="menu hidden">
+        <div>
           Menu
           <i class="fa-solid fa-bars"></i>
-        </p>
+        </div>
       </div>
-    </nav>
+    </div>
     <header>
-      <div class="header-content">
+      <div id="#about" class="header-content">
         <h1>G R A Y S C A L E</h1>
         <p>
           A free, responsive, one page Bootstrap theme created by Start
@@ -47,8 +47,8 @@
         </p>
       </div>
     </section>
-    <section class="shoreline">
-      <img src="./srk/bla3.jpeg" alt="" />
+    <section id="projects" class="shoreline">
+      <img src="./assets/img/bla1.jpg" alt="" />
       <div class="shoreline-content">
         <h3>Shoreline</h3>
         <p>
@@ -58,9 +58,9 @@
         </p>
       </div>
     </section>
-    <section class="mm">
+    <section id="projects" class="mm">
       <div class="misty">
-        <img src="./srk/black1.jpg" alt="" />
+        <img src="./assets/img/bla4.webp" alt="" />
         <div class="misty-content">
           <div class="mis">
             <h1>Misty</h1>
@@ -71,7 +71,7 @@
           </div>
         </div>
       </div>
-      <div class="mount">
+      <div id="projects" class="mount">
         <div class="mount-content">
           <div class="mou">
             <h1>Mountains</h1>
@@ -81,32 +81,34 @@
             </p>
           </div>
         </div>
-        <img src="./srk/bla3.jpeg" alt="" />
+        <img src="./assets/img/black1.jpg" alt="" />
       </div>
     </section>
-    <section class="last">
-      <div class="sub">
-        <h1>Subscribe to receive updates!</h1>
+    <section id="contact" class="last">
+      <div style="padding-bottom: 10px">
+        <h1 style="padding-bottom: 10px">Subscribe to receive updates!</h1>
         <a>ENTER EMAIL ADDRESS...</a>
         <a> NOTIFY ME! </a>
       </div>
-      <div>
-        <div>
-          <h1>ADDRESS</h1>
-          <h4>4923 Market Street, Orlando FL</h4>
+      <div class="footer_content">
+        <div style="padding-bottom: 5px">
+          <span>ADDRESS :</span> <span>4923 Market Street, Orlando FL</span>
         </div>
-        <div>
-          <h1>EMAIL</h1>
-          <a href="">hello@yourdomain.com</a>
+        <div style="padding-bottom: 5px">
+          <span>EMAIL :</span>
+          <span><a href="">hello@yourdomain.com</a></span>
         </div>
-        <div>
-          <h1>PHONE</h1>
-          <h4>+1 (555) 902-8832</h4>
+
+        <div style="padding-bottom: 5px">
+          <span>PHONE :</span>
+          <span>+1 (555) 902-8832</span>
         </div>
       </div>
       <div>
-        <div>
+        <div style="padding: 5px; font-size: 25px; margin-right: 5px">
           <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-envelope"></i>
         </div>
         <div>
           <h3>Copyright © Your Website 2023</h3>
@@ -115,14 +117,11 @@
     </section>
     <script>
       const menu = document.querySelector(".menu");
-      const navlinks = document.querySelector(".nav-links");
-
+      const menulist = document.querySelector(".nav-links");
       menu.addEventListener("click", () => {
-        navlinks.classList.toggle("mobile-menu");
+        menulist.classList.toggle("hidden");
       });
     </script>
-
-    <!--// <i class="fa-brands fa-facebook-f"></i>//-->
   </body>
 </html>
 1
